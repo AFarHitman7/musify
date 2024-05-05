@@ -173,6 +173,8 @@ section{
 
 .current_events{
     flex-direction: column;
+    margin-bottom: 6vh;
+
 }
 
 .current_bg{
@@ -255,4 +257,72 @@ section{
 
 .arrow_right{
     right: 0%;
+}
+
+/*About us section */
+
+.aboutus{
+    overflow: hidden;
+    padding-bottom: 15vh;
+    margin-bottom: 6vh;
+}
+
+.ribbon{
+    
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    padding: .6rem;
+    gap: 3rem;
+    font-weight: 800;
+    font-size: 2.2rem;
+}
+
+.ribbon i{
+    font-size: 1.4rem;
+}
+
+.r_grey{
+    background-color: #FFFFFF80;
+    color: white;
+    rotate: 25deg;
+}
+
+.r_white{
+    position: absolute;
+    rotate: -35deg;
+    top: -40%;
+    left: -20%;
+    background-color: white;
+    color: black;
+    z-index: -1;
+}
+
+.girl_img{
+    position: absolute;
+    height: 25rem;
+    left: 10%;
+    bottom: 0%;
+    z-index: 1;
+}
+
+.text_col{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    justify-content:space-between;
+    padding: 0 3rem;
+    margin-top: 4rem;
+    width: 100%;
+}
+
+.float_title{
+    rotate: 25deg;
+    padding-bottom: 4rem;
+    margin-right: 9rem;
+}
+
+.text_container{
+    padding: 0 10rem;
+    width: 30rem;
 }
