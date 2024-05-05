@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    background-color: black;
+
+  }
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*Navbar*/
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    margin: 0 2rem;
+}
+
+.logo img{
+    height: 2rem;
+}
+
+.dark_btn{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 1.5rem;
+    width: 3rem;
+    border-radius: 2rem;
+    background-color: black;
+    margin: 0 2rem;
+    padding: 0.2rem;
+    cursor: pointer;
+}
+
+.select{
+    align-self: flex-end;
+    height: 100%;
+    width: 1.5rem;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.day, .night{
+    position:absolute;
+    padding: .3rem;
+    height: 1.2rem;
+    width: 1.2rem;
+    top: 0;
+}
+
+.day{
+    left: 0%;
+}
+
+.night{
+    right: 0%;
+}
+
+/*Landing page*/
+
+section{
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+.wom_img{
+    position: absolute;
+    bottom: -18%;
+    right: 0%;
+    min-height: 800px;
+    height: 130%;
+    z-index: -1;
+}
+
+.bg_text{
+    position: absolute;
+    font-family: "Inter", sans-serif;
+    font-size: 30rem;
+    color: #FFFFFF4D;
+    letter-spacing: 1rem;
+    line-height: 0.8;
+    text-align: center;
+    bottom: 0;
+    left: -10%;
+    font-weight: 800;
+    z-index: -2;
+}
+
+.title_container{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    padding: 5rem;
+    gap: 1rem;
+}
+
+.title_main{
+    display: flex;
+    position: relative;
+}
+
+.rect{
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    justify-self: end;
+    align-self: end;
+    margin: 1rem .5rem;
+}
+
+.title_text{
+    font-size: 8rem;
+    line-height: 98%;
+}
+
+.text_landing{
+    font-size: 1rem;
+    width: 28rem;
+    text-align: justify;
+    font-weight: 300;
+}
+
+.download_container{
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.download_container i{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.download_btn{
+    color: black;
+    background-color: white;
+    border-radius: 3rem;
+    cursor: pointer;
+    padding: 0.4rem 1rem;
+}
