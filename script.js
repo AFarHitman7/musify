@@ -12,5 +12,72 @@ $(document).ready(function(){
     });
   });
 
+
+// Page nav
+
+const isInViewport = function(el) {
+    const percentVisible = 40;
+    let
+      rect = el.getBoundingClientRect(),
+      windowHeight = (window.innerHeight || document.documentElement.clientHeight);
+  
+    return !(
+      Math.floor(100 - (((rect.top >= 0 ? 0 : rect.top) / +-rect.height) * 100)) < percentVisible ||
+      Math.floor(100 - ((rect.bottom - windowHeight) / rect.height) * 100) < percentVisible
+    )
+  };
+
+var page1 = document.querySelector('.page-one');
+var page2 = document.querySelector('.page-two');
+var page3 = document.querySelector('.page-three');
+var page4 = document.querySelector('.page-four');
+var page5 = document.querySelector('.page-five');
+var dot1 = document.querySelector('.dot-1');
+var dot2 = document.querySelector('.dot-2');
+var dot3 = document.querySelector('.dot-3');
+var dot4 = document.querySelector('.dot-4');
+var dot5 = document.querySelector('.dot-5');
+
+console.log(page1);
+console.log(isInViewport(page1));
+
+  
+if (isInViewport(page1)) {
+    dot1.classList.add('dots-active');
+  }
+
+document.addEventListener('scroll', function() {
+  
+  if (isInViewport(page1)) {
+    dot1.classList.add('dots-active');
+  } else {
+    dot1.classList.remove('dots-active');
+  }
+  
+  if (isInViewport(page2)) {
+    dot2.classList.add('dots-active');
+  } else {
+    dot2.classList.remove('dots-active');
+  }
+  
+  if (isInViewport(page3)) {
+    dot3.classList.add('dots-active');
+  } else {
+    dot3.classList.remove('dots-active');
+  }
+
+  if (isInViewport(page4)) {
+    dot4.classList.add('dots-active');
+  } else {
+    dot4.classList.remove('dots-active');
+  }
+
+  if (isInViewport(page5)) {
+    dot5.classList.add('dots-active');
+  } else {
+    dot5.classList.remove('dots-active');
+  }
+  
+});
   
 
