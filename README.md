@@ -19,7 +19,7 @@
 
 ## Features
 
-Musify offers a range of features to enhance the music listening experience:
+Added couple of features to improve user flow:
 
 - **Page Navigation:** Easily track your progress through the website with the interactive page navigation dots on the right. Each dot represents a page or section, providing a visual indicator of your current location.
 - **Events Carousel:** Stay updated with upcoming events using the dynamic events carousel. Swipe through event cards to view details and participate in exciting music-related activities.
