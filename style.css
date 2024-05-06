@@ -108,7 +108,7 @@ section{
     letter-spacing: 1rem;
     line-height: 0.8;
     text-align: center;
-    bottom: 0;
+    top: -5%;
     left: -10%;
     font-weight: 800;
     z-index: -2;
@@ -205,10 +205,10 @@ section{
 
 .card_container{
     display: flex;
-    width: fit-content;
-    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 70%, transparent 100%);
-    gap: 2rem;
+    width: 100%;
+    margin: 0 -0.5rem;
 }
+
 .section_title p{
     font-size: 1.75rem;
     font-weight: 400;
@@ -216,9 +216,10 @@ section{
 
 .card{
     height: 23rem;
-    width: 18rem;
+    width: 16rem;
     background-color: #404040;
     border-radius: 1rem;
+    margin: 0 0.5rem;
 }
 
 .card p{
@@ -234,16 +235,25 @@ section{
     width: 100%;
 }
 
+
+.slick-active + .slick-active + .slick-active + .slick-active + .slick-active{
+    mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
+}
+
+.slick-arrow.slick-disabled {
+    display: none !important;
+  }
+
 .arrow_left, .arrow_right{
     cursor: pointer;
     position: absolute;
-    top: 60%;
+    top: 50%;
     color: black;
     background-color: white;
     padding: .5rem;
     border-radius: 1rem;
-    height: 1rem;
-    width: 1rem;
+    height: 2rem;
+    width: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,8 +261,7 @@ section{
 }
 
 .arrow_left{
-    left: -5%;
-    display: none;
+    left: 0%;
 }
 
 .arrow_right{
@@ -327,4 +336,121 @@ section{
 .text_container{
     padding: 0 10rem;
     width: 30rem;
+}
+
+/* Contact Us */
+
+.contact{
+    justify-content: center;
+}
+
+.bg_2{
+    position: absolute;
+    align-self: center;
+    background-color: #404040;
+    border-radius: 2rem;
+    height: 80vh;
+    width: 70vw;
+    z-index: -2;
+}
+
+.bg_contact{
+    z-index: -1;
+    font-size: 17rem;
+    width: 100%;
+    top: 25%;
+    left: 0;
+    color: transparent;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, .30);
+}
+
+.contact_container{
+    align-self: center;
+    height: 80vh;
+    width: 70vw;
+    display: flex;
+    align-items: center;
+}
+
+.form{
+    z-index: 1;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img_phone{
+    z-index: 1;
+    height: 25rem;
+}
+
+.label_text{
+    font-size: 1.2rem;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgba(0, 0, 0, .50);
+}
+
+.form_box{
+    width: 20rem;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    background-color: rgba(0, 0, 0, .30);
+    border: none;
+    color: white;
+}
+
+.f2{
+    height: 8rem;
+}
+
+/* Signup page */
+
+.signup{
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.signup_img{
+    position: absolute;
+    height: 90vh;
+    right: 10%;
+    bottom: 0;
+}
+
+.signup_form{
+    background-color: #404040;
+    border-radius: 1rem;
+    border-bottom-left-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem 1rem;
+}
+
+.dark_circle{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, .50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+.dark{
+    background-color: rgba(0, 0, 0, .50);
+    color: white;
+}
+
+.line_blue{
+    width: 80%;
+    height: 1px;
+    background-color: #46B4F2;
 }
