@@ -25,12 +25,15 @@
         <div class="logo">
             <img src="assets/logo.png" alt="">Musify
         </div>
-        <div class="dark_btn">
-            <div class="select"></div>
-            <img src="assets/day.png" class="day">
-            <img src="assets/night.png" class="night">
+        <div id="darkSwitch" class="dark_btn">
+            <div id="select_bar" class="select">
+                <i id="day" class="fa-solid fa-sun day" style="display: none;"></i>
+                <i id="night" class="fa-solid fa-moon night"></i>
+            </div>
+            
         </div>
     </div>
+
     <a name="pageone"></a>
     <section class="landing">
         
@@ -228,7 +231,7 @@
             <p>LOVE</p><i class="fa-solid fa-circle"></i><p>MUSIC</p><i class="fa-solid fa-circle"></i>
             <p>LOVE</p><i class="fa-solid fa-circle"></i><p>MUSIC</p><i class="fa-solid fa-circle"></i>
         </div>
-        <img src="assets/girl_black.png" class="girl_img">
+        <img src="assets/girl_black.png" id="girl_img" class="girl_img">
         <div class="text_col page-three">
             <div class="float_title"><p class="heading">About Us</p></div>   
             <div class="text_container"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit ligula auctor dignissim eget. Adipiscing ut ultrices convallis eget eu. Bibendum nulla vitae egestas ut nisl. Egestas netus faucibus aliquet nibh volutpat morbi metus, commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit ligula auctor dignissim eget. Adipiscing ut ultrices convallis eget eu. Bibendum nulla vitae egestas ut nisl. Egestas netus faucibus aliquet nibh volutpat morbi metus, commodo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Velit ligula auctor dignissim eget. Adipiscing ut ultrices convallis eget eu. Bibendum nulla vitae egestas ut nisl.</p></div>
@@ -247,7 +250,7 @@
                     <textarea type="text" class="form_box f2" id="lname" name="lname" placeholder="Jazz and food.."></textarea>
                   </form> 
             </div>
-            <img src="assets/phone.png" alt="" class="img_phone">
+            <img src="assets/phone.png" alt="" id="img_phone" class="img_phone">
         </div>
         <div class="bg_text bg_contact">CONTACT<br>US</div>
     </section>
@@ -255,7 +258,7 @@
     <a name="pagefive"></a>
     <section class="signup">
         <p class="heading">Account</p>
-        <img src="assets/signup.png" class="signup_img">
+        <img src="assets/signup.png" id="signup_img" class="signup_img">
         <div class="contact_container page-five">
             <div class="form signup_form">
                 <div class="dark_circle"><i class="fa-solid fa-user-plus"></i></div>

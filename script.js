@@ -1,3 +1,38 @@
+//dark-mode
+
+// Get the dark mode toggle button
+const darkModeToggle = document.getElementById('darkSwitch');
+const currentBtn = document.getElementById('select_bar');
+
+// Function to toggle dark mode
+function toggleDarkMode() {
+    document.body.classList.toggle('light-mode');
+
+    if(document.body.classList.contains('light-mode')){
+        currentBtn.style.alignSelf = "flex-start";
+        document.getElementById("girl_img").src="assets/girl_blue.png";
+        document.getElementById("img_phone").src="assets/phone2.png";
+        document.getElementById("signup_img").src="assets/signup2.png";
+        document.getElementById("night").style.display = "none";
+        document.getElementById("day").style.display = "flex";
+
+
+    }
+    if(!document.body.classList.contains('light-mode')){
+        currentBtn.style.alignSelf = "flex-end";
+        document.getElementById("girl_img").src="assets/girl_black.png";
+        document.getElementById("img_phone").src="assets/phone.png";
+        document.getElementById("signup_img").src="assets/signup.png";
+        document.getElementById("day").style.display = "none";
+        document.getElementById("night").style.display = "flex";
+    }
+}
+
+// Add click event listener to the toggle button
+darkModeToggle.addEventListener('click', toggleDarkMode);
+
+
+
 //card slider
 
 $(document).ready(function(){
