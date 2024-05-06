@@ -236,7 +236,7 @@ section{
 }
 
 
-.slick-active + .slick-active + .slick-active + .slick-active + .slick-active{
+.fade_last{
     mask-image: linear-gradient(to right, rgba(0, 0, 0, 1.0) 10%, transparent 100%);
 }
 
@@ -356,7 +356,7 @@ section{
 
 .bg_contact{
     z-index: -1;
-    font-size: 17rem;
+    font-size: 17vw;
     width: 100%;
     top: 25%;
     left: 0;
@@ -465,12 +465,10 @@ ul {
   .dots-wrapper {
       position: fixed;
       display: flex;
-      width: 100%;
+      width: 5%;
       height: 100%;
       top: 0;
-      left: 0;
       right: 0;
-      bottom: 0;
       opacity: .95;
       z-index: 2;
   }

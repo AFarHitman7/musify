@@ -1,3 +1,4 @@
+//card slider
 
 $(document).ready(function(){
     $('.card_container').slick({
@@ -8,10 +9,32 @@ $(document).ready(function(){
         slidesToScroll: 3,
         arrows: true,
         prevArrow:"<button type='button' class='arrow_left' style='display: flex'><i class='fa-solid fa-arrow-left'></i></button>",
-        nextArrow:"<button type='button' class='arrow_right' style='display: flex'><i class='fa-solid fa-arrow-right'></i></button>"
+        nextArrow:"<button type='button' class='arrow_right' style='display: flex'><i class='fa-solid fa-arrow-right'></i></button>",
+        responsive: [
+            {
+              breakpoint: 1200,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 3,
+              }
+            },
+            {
+              breakpoint: 1050,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 800,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+        ]
     });
   });
-
 
 // Page nav
 
@@ -37,9 +60,6 @@ var dot2 = document.querySelector('.dot-2');
 var dot3 = document.querySelector('.dot-3');
 var dot4 = document.querySelector('.dot-4');
 var dot5 = document.querySelector('.dot-5');
-
-console.log(page1);
-console.log(isInViewport(page1));
 
   
 if (isInViewport(page1)) {
